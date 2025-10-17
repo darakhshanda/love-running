@@ -33,6 +33,7 @@ main {
   flex: 1 0 auto;
 }
 h1 {
+  font-family: "oswald", sans-serif;
   text-align: center;
   flex: 1 0 auto;
 }
