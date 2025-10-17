@@ -18,7 +18,39 @@ body {
   color: #3a3a3a;
   font-family: "Lato", sans-serif;
 }
-
+/* Style the main heading */
+h1,
+h2,
+h3 {
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  initial-letter: 2px;
+  color: #252525;
+}
+/* Style the hero text */
+#hero-text {
+  /* Final the text to be transparent on top of the hero section */
+  background-color: rgba(241, 109, 107, 0.7);
+  font-size: 130%;
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+  min-height: 200px;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+/* Hero section */
+#hero {
+  height: 600px;
+  width: 100%;
+  background: url("../images/hero-image.webp") no-repeat center center/cover;
+  position: relative;
+}
+#hero-text > h2,
+#hero-text > h3 {
+  color: #ffffff;
+  text-align: left;
+}
 /* Header */
 header {
   background-color: #ffffff;
@@ -36,13 +68,7 @@ header a {
   text-decoration: none;
   color: inherit;
 }
-/* Style the main heading */
-h1 {
-  font-family: "oswald", sans-serif;
-  text-transform: uppercase;
-  initial-letter: 2px;
-  color: #252525;
-}
+
 /* Style the navigation menu */
 #menu {
   font-size: 110%;
@@ -88,12 +114,7 @@ main {
   flex: 1 0 auto;
   margin-top: 47px;
 }
-/* Hero section */
-#hero {
-  height: 600px;
-  width: 100%;
-  background: url("../images/hero-image.webp") no-repeat center center/cover;
-}
+
 /* Center paragraph text in main content */
 p {
   text-align: center;
