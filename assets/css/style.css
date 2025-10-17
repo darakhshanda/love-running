@@ -142,3 +142,10 @@ footer {
     }
   }
 }
+#social-networks {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+/* Center h1 and p vertically in the space between header and main */
