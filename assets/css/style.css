@@ -16,33 +16,59 @@ body {
   flex-direction: column;
   /* Generic project styles */
   color: #3a3a3a;
-  flex: 1 0 auto;
   font-family: "Lato", sans-serif;
 }
 
 /* Header */
 header {
-  background-color: lightcoral;
-  justify-content: center;
+  background-color: #ffffff;
+  padding: 0 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  box-shadow: 0 2px 2px #3a3a3a;
+}
+/* Remove underline from links in header */
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Style the main heading */
+h1 {
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  initial-letter: 2px;
+  color: #252525;
+}
+/* Style the navigation menu */
+#menu {
+  font-size: 110%;
+  letter-spacing: 4px;
+  list-style-type: none;
+}
+/* Remove underline from links in menu */
+li a {
+  text-decoration: none;
 }
 
+/* Style the active menu item */
+.active {
+  border-bottom: 1px solid #3a3a3a;
+}
 /* Main content */
 main {
-  background-color: lightblue;
+  background-color: lightpink;
   /* Make main element take up any surplus space to push footer down */
   flex: 1 0 auto;
 }
-h1 {
-  font-family: "oswald", sans-serif;
-  text-align: center;
-  flex: 1 0 auto;
-}
+/* Center paragraph text in main content */
 p {
   text-align: center;
-  flex: 1 0 auto;
+  font-size: 1.2rem;
+  margin-top: 2rem;
 }
-
 /* Footer */
 footer {
   background-color: orange;
+  padding: 1rem;
 }
