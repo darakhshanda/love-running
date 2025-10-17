@@ -12,17 +12,27 @@ body {
   flex-direction: column;
   /* Generic project styles */
   color: #3a3a3a;
+  flex: 1 0 auto;
 }
 
 /* Header */
 header {
   background-color: lightcoral;
+  justify-content: center;
 }
 
 /* Main content */
 main {
   background-color: lightblue;
   /* Make main element take up any surplus space to push footer down */
+  flex: 1 0 auto;
+}
+h1 {
+  text-align: center;
+  flex: 1 0 auto;
+}
+p {
+  text-align: center;
   flex: 1 0 auto;
 }
 
