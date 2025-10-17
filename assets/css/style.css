@@ -1,0 +1,37 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+  width: 100%;
+  background-color: #44ec11;
+  padding: 20px 0;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Footer styles */
+footer {
+  width: 100%;
+  background-color: #db0d4b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
