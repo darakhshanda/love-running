@@ -1,37 +1,32 @@
-/* Reset default styles */
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-/* Header styles */
-header {
-  width: 100%;
-  background-color: #44ec11;
-  padding: 20px 0;
-}
-
-/* Body styles */
+/* General styles */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: aqua;
+  /* Generic project styles */
+  color: #3a3a3a;
 }
 
+/* Header */
+header {
+  background-color: lightcoral;
+}
+
+/* Main content */
 main {
-  flex: 1;
-  padding: 20px;
+  background-color: lightblue;
+  /* Make main element take up any surplus space to push footer down */
+  flex: 1 0 auto;
 }
 
-/* Footer styles */
+/* Footer */
 footer {
-  width: 100%;
-  background-color: #db0d4b;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
+  background-color: orange;
 }
