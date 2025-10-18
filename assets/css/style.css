@@ -168,6 +168,7 @@ p {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  justify-content: space-around;
 }
 @media screen and (min-width: 768px) {
   /* Header styles for larger screens */
@@ -209,7 +210,22 @@ p {
     width: 300px;
     right: 50px;
   }
+  /** Menu item hover effect for larger screens */
+  #benefits-physical,
+  #benefits-mental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #benefits-physical > div,
+  #benefits-mental > div {
+    width: 75%;
+  }
 
+  #benefits-mental > div {
+    text-align: end;
+    align-self: flex-end;
+  }
   /* Large devices (laptops and desktops, 992px and up) */
   @media screen and (min-width: 992px) {
     #menu a:hover {
