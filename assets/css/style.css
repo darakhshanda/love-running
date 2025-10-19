@@ -195,6 +195,26 @@ main {
 #photos {
   line-height: 0;
 }
+#signup {
+  background: url("../images/signup-image.webp") no-repeat center/cover;
+  background-position: 75%;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+#signup-form {
+  color: #ffffff;
+  background-color: rgba(60, 60, 60, 0.6);
+  padding: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#times h3 {
+  /* Override the heading colour set in general styles */
+  color: #fafafa;
+}
 
 /* Footer */
 #social-networks {
@@ -211,7 +231,7 @@ main {
   color: #3a3a3a;
 }
 
-/* Media query: large or landscape phones (576px and up) */
+/* Media query: phones (576px and up) */
 @media screen and (min-width: 576px) {
   #photos {
     column-count: 2;
@@ -281,6 +301,10 @@ main {
   /* Gallery */
   #photos {
     column-count: 3;
+  }
+  #signup {
+    display: flex;
+    flex-direction: column;
   }
 }
 /* Medium devices (desktops, 992px and up) */
