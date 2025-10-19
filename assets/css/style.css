@@ -283,8 +283,7 @@ main {
     column-count: 3;
   }
 }
-
-/* Large devices (laptops and desktops, 992px and up) */
+/* Medium devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
@@ -295,7 +294,7 @@ main {
     column-count: 4;
   }
 }
-
+/* Large devices (laptops and desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
   /* Reasons section */
   #benefits {
