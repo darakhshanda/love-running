@@ -112,16 +112,19 @@ p {
 
 /* Footer */
 #social-networks {
-  list-style-type: none;
+  text-align: center;
+  padding: 20px 0;
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-evenly;
+  list-style-type: none;
 }
+
 #social-networks i {
   font-size: 160%;
   padding: 5%;
   color: #3a3a3a;
 }
+
 /* Hero section */
 #hero {
   height: 600px;
