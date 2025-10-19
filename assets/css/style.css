@@ -101,16 +101,15 @@ p {
   margin-top: 2rem;
 }
 /* Photos section */
-#photos>img {
-    width: 100%;
-    line-height: 1em;
+#photos > img {
+  width: 100%;
+  line-height: 1em;
 }
 
 #photos {
-    line-height: 0;
+  line-height: 0;
 }
 
-}
 /* Footer */
 #social-networks {
   list-style-type: none;
