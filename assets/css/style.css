@@ -27,6 +27,10 @@ h3 {
   color: #252525;
 }
 
+.hidden-heading {
+  display: none;
+}
+
 /* Header */
 header {
   background-color: #ffffff;
@@ -86,9 +90,13 @@ nav {
 
 /* Main content */
 main {
-  /* Make main element take up any surplus space to push footer down */
+  /* Enlarge main element to push footer down*/
   flex: 1 0 auto;
+  /* Add margin at the top to prevent content from being covered by the header */
   margin-top: 47px;
+  /* Enable flex properties for child elements */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Hero section */
@@ -122,8 +130,7 @@ main {
   margin: 20px auto;
 }
 
-#reasons,
-#signup-form h2 {
+#reasons h2 {
   margin-bottom: 20px;
   text-align: center;
   font-size: 280%;
@@ -178,7 +185,7 @@ main {
     Each div will expand to fill the available space on its row */
   flex-basis: 200px;
   flex-grow: 1;
-  /* Creates a grid of meetup time divs over the background image */
+  /* Creates a grid of meetup time dives over the background image */
   border: 2px solid white;
 }
 
@@ -196,67 +203,53 @@ main {
 #photos {
   line-height: 0;
 }
-/* main for sign up html*/
- main {
-    /* Enlarge main element to push footer down*/
-    flex: 1 0 auto;
-    /* Add margin at the top to prevent content from being covered by the header */
-    margin-top: 47px;
-    /* Enable flex properties for child elements */
-    display: flex;
-    flex-direction: column;
-}
+
+/* Form */
 #signup {
-  background: url("../images/signup-image.webp");
+  background-image: url("../images/signup-image.webp");
   background-size: cover;
   background-position: 75%;
-  padding: 20px 10% 0 10%
-  display: flex;
+  padding: 20px 10% 0 10%;
   flex-grow: 1;
-  }
+}
+
 #signup-form {
   color: #ffffff;
   background-color: rgba(60, 60, 60, 0.6);
-  margin: 10% 10%;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  display: flex;
-  align-self: center;
-  flex-direction: column;
-  position: relative;
+  padding: 30px;
 }
-#signup-form h2 {
-  /* Override the heading colour set in general styles */
+
+#signup-form > h2 {
   color: #fafafa;
   margin-bottom: 20px;
 }
 
 .text-input {
-  color: #fafafa;
-  height: 25px;
-  width: 100%;
-  border: 1px solid #fafafa;
   background: transparent;
+  color: #fafafa;
+  width: 100%;
+  height: 25px;
+  margin: 5px 0 20px 0;
+  border: 1px solid #fafafa;
   border-radius: 2px;
   padding: 0 5px;
-  margin: 5px 0 20px 0;
 }
+
+.radio-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .join-button {
   margin-top: 20px;
   border-radius: 2px;
-  background-color: #454b1b;
-  color: #fafafa;
   padding: 15px 32px;
   font-size: 100%;
-  cursor: pointer;
-  
+  background-color: #454b1b;
+  color: #fafafa;
 }
-.radio-buttons {
-  width: 100px;
-  display: flex;
-  flex-direction: space-between;
-  
-}
+
 /* Footer */
 #social-networks {
   text-align: center;
@@ -272,15 +265,12 @@ main {
   color: #3a3a3a;
 }
 
-/* Media query: phones (576px and up) */
+/* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
   #photos {
     column-count: 2;
     column-gap: 0;
   }
-    /* Main content */
- 
-  
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -346,30 +336,31 @@ main {
   #photos {
     column-count: 3;
   }
- /*form styles*/
+
+  /* Form */
   #signup {
-    background-position:center;
+    background-position: center;
     position: relative;
-   
   }
-  
-  /* Signup section */
+
   #signup-form {
     max-width: 400px;
     position: absolute;
-    left:10%
-    top:150px;
+    left: 10%;
+    top: 150px;
   }
+
   .text-input:hover {
     border-color: #f16c6b;
-}
+  }
 
-.join-button:hover {
+  .join-button:hover {
     background-color: #fafafa;
     color: #454b1b;
+  }
 }
-}
-/* Medium devices (desktops, 992px and up) */
+
+/* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
@@ -380,7 +371,7 @@ main {
     column-count: 4;
   }
 }
-/* Large devices (laptops and desktops, 1200px and up) */
+
 @media screen and (min-width: 1200px) {
   /* Reasons section */
   #benefits {
